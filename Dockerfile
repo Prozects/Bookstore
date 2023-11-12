@@ -1,6 +1,7 @@
 FROM timbru31/node-alpine-git:20
-RUN git clone https://github.com/AnselemOdims/Bookstore.git && cd /Bookstore
+RUN mkdir /Bookstore
+ADD . /Bookstore
 WORKDIR /Bookstore
-RUN npm install
 EXPOSE 3000
+RUN cd /Bookstore && npm install
 CMD [ "npm", "start" ]

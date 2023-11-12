@@ -1,0 +1,4 @@
+$ git clone https://github.com/Prozects/Bookstore.git
+$ cd Bookstore
+$ npm install
+$ npm start # this will open it in the browser and enable hot reloading
